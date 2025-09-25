@@ -9,8 +9,22 @@ const App = () => {
       className="box"
       drag
       whileDrag={{
-        scale: 0.8
-      }}>
+        scale: 0.8,
+        rotate: 360,
+        cursor: "pointer",
+        backgroundColor: "green"
+      }}
+      whileHover={{
+        backgroundColor: "green"
+      }}
+      dragConstraints={{
+        left: 0,
+        right: 1000,
+        top: 0,
+        bottom: 300
+      }}
+      // dragDirectionLock= "true"
+      >
       
       </motion.div>
 
